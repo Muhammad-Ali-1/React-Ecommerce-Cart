@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Asap", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #f4f5f8;
+  display: flex;
+}
+.sidebar .sidebar-content {
+  background-color: #fff;
+  box-shadow: 0px 10px 40px rgba(204, 208, 219, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar .sidebar-container {
+  padding: 3rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.sidebar .sidebar-container img {
+  width: 3.2rem;
+}
+
+.sidebar .sidebar-container .nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sidebar .sidebar-container .nav-items .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.3rem 2rem;
+  position: relative;
+  /* Rectangle */
+}
+
+.sidebar .sidebar-container .nav-items .active {
+  background: linear-gradient(135deg, #f98443 0%, #f84775 100%);
+  box-shadow: 0px 10px 30px rgba(239, 132, 121, 0.520494);
+  border-radius: 8px;
+}
+
+.sidebar .sidebar-container .nav-items .nav-item .food-icon {
+  width: 3.3rem;
+}
+.sidebar .sidebar-container .nav-items .nav-item .drinks-icon {
+  width: 1.9rem;
+}
+.sidebar .sidebar-container .nav-items .nav-item .snack-icon {
+  width: 2.7rem;
+}
+.sidebar .sidebar-container .nav-items .nav-item .dessert-icon {
+  width: 2.2rem;
+}
+.sidebar .sidebar-container .nav-items .nav-item .package-icon {
+  width: 3.1rem;
+}
+
+.sidebar .sidebar-container .nav-items a {
+  text-decoration: none;
+}
+.sidebar .sidebar-container .nav-items h3 {
+  font-size: 1.3 rem;
+  color: #4a4c50;
+  font-weight: 100;
+}
+.sidebar .sidebar-container .nav-items .nav-item.active .active-text {
+  color: #fff;
+}
+
+.sidebar {
+}
+.sidebar .sub-menu {
+  position: absolute;
+  left: 160%;
+  display: flex;
+  flex-direction: column;
+}
